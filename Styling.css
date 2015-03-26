@@ -1,0 +1,22 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+nav {
+  position: fixed;
+  height:100%;
+  width:200px;
+  background:#00CCFF;
+}
+
+h1 {
+  font-size:24px;
+}
+
+.content {
+  padding-left: 200px;
+  /*padding-left:230px;
+  padding-right: 30px;
+  padding-top:30px;*/
+}
