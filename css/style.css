@@ -108,9 +108,8 @@ img {
 
 .tile-clone {
 	z-index: 2;
-	margin-top: 520px;
+	margin-top: 57%;
 	position: absolute;
-	float:left;
 	width: 49.7%;
 	height: 300px;
 	-webkit-transition: all 400ms cubic-bezier(0, .93, .33, .99);
@@ -126,9 +125,9 @@ img {
 }
 
 .tile-clone.animate {
-	width: 75%;
+	width: 70%;
 	height: 600px; 
-	margin-top : 700px; 
+	margin-top : 70%; 
 	margin-left : 12.5%;
 	-webkit-transition: all 400ms cubic-bezier(0, .93, .33, .99);
 	-moz-transition: all 400ms cubic-bezier(0, .93, .33, .99);
