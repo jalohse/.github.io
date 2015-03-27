@@ -127,7 +127,7 @@ img {
 .tile-clone.animate {
 	width: 70%;
 	height: 600px; 
-	margin-top : 70%; 
+	margin-top : 90%; 
 	margin-left : 12.5%;
 	-webkit-transition: all 400ms cubic-bezier(0, .93, .33, .99);
 	-moz-transition: all 400ms cubic-bezier(0, .93, .33, .99);
