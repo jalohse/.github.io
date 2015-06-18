@@ -1,0 +1,221 @@
+body {
+    border-top: 5px solid;
+    border-color: #885aa4;
+}
+
+
+/******************** Navigation *********************/
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #885aa4;
+    color: white;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+nav li:last-child {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/******************** Header ************************/
+
+
+.logo {
+    margin-top: 5px;
+}
+
+/******************* Images *************************/
+.small-screen-container {
+    /*width: 418px;*/
+    height: 450px;
+    overflow: hidden;
+}
+.small-screen-container img {
+    width: 100%;
+}
+
+.fullWidth {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    text-align: center;
+}
+
+.fullWidth img {
+    position: relative;
+    width: 100%;
+}
+
+.fullWidth h2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+}
+
+h2 span {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    max-width: 100%;
+    position: relative;
+    top: 90px;
+}
+
+@media screen and (max-width: 641px) {
+    .about-image {
+        display: none;
+    }
+
+    .large-screen-img {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 642px) {
+    footer img {
+        display: none;
+    }
+
+    .small-screen-container {
+        display: none;
+    }
+
+    .project-arrow {
+        display: none;
+    }
+}
+
+/****************** Body *****************/
+
+#about {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "HelveticaNeue-Light", sans-serif;
+    max-width: 30%;
+    background-color: #885aa4;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.about-text {
+    box-sizing: border-box;
+    background-color: #dcc9e7;
+    padding: 40px  20px 20px;
+    margin-top: -40px;
+    z-index: -100;
+    position: relative;
+}
+
+h4 {
+    color: #885aa4;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h2 {
+    font-family: HelveticaNeue-Light, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: HelveticaNeue-Light, sans-serif;
+}
+
+
+.individual-project {
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.project-description {
+    margin-top: 20px;
+}
+
+.project-arrow {
+    position: relative;
+    float: right;
+    top: -450px;
+}
+
+.social-media li{
+    display: inline-block;
+    color: #885aa4;
+}
+
+
+input {
+    background-color: #dcc9e7;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+textarea {
+    background-color: #dcc9e7;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button {
+    color: white;
+    background-color: #885aa4;
+}
+
+
+
+::-webkit-input-placeholder {
+    color: dimgray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: dimgray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: dimgray;
+}
+
+:-ms-input-placeholder {
+    color: dimgray;
+}
+
+#contact p {
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #885aa4;
+}
+
+
+footer .social-media i {
+    color: white;
+    padding: 10px;
+}
