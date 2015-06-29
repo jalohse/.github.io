@@ -129,6 +129,15 @@ h3 {
     position: relative;
 }
 
+.about-text-list {
+  box-sizing: border-box;
+  background-color: #dcc9e7;
+  padding: 20px  20px 20px;
+  margin-top: -40px;
+  z-index: -100;
+  position: relative;
+}
+
 h4 {
     color: #885aa4;
     font-family: "Helvetica Neue", Arial, sans-serif;
