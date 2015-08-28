@@ -6,6 +6,11 @@ body {
 
 /******************** Navigation *********************/
 
+nav {
+    position: absolute!important;
+    top: 0;
+}
+
 nav li {
     display: inline-block;
     padding: 10px;
@@ -37,6 +42,14 @@ a:hover {
     margin-top: 5px;
 }
 
+
+.large-screen-img {
+    background: url("img/jessicaHeader1.jpg") no-repeat top center fixed;
+    background-size: cover ;
+    height: 850px;
+}
+
+
 /******************* Images *************************/
 .small-screen-container {
     /*width: 418px;*/
@@ -67,16 +80,24 @@ a:hover {
     width: 100%;
 }
 
+
+.crop-height {
+    max-height: 600px;
+    overflow: hidden;
+}
+
 h2 span {
     color: white;
     font-family: "Helvetica Neue", sans-serif;
+    font-size: 3rem;
     letter-spacing: -1px;
     background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     padding: 10px;
     max-width: 100%;
     position: relative;
-    top: 90px;
+    top: 400px;
+    float: left;
 }
 
 @media screen and (max-width: 641px) {
