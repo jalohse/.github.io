@@ -930,8 +930,14 @@ select {
   .large-12 {
     width: 100%
   }
+  .large-13{
+    width:116%
+  }
   .large-offset-0 {
     margin-left: 0 !important
+  }
+  .large-offset-0-5 {
+    margin-left: 3% !important
   }
   .large-offset-1 {
     margin-left: 8.33333% !important
