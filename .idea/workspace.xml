@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe6cd4c-27b1-4cd0-b27c-237196b6ee32" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/arrow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/arrows.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/beaver.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sodalis.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tree2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tree3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tree4.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.html" afterPath="$PROJECT_DIR$/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sodalisInfo_edge.js" afterPath="$PROJECT_DIR$/sodalisInfo_edge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1fe6cd4c-27b1-4cd0-b27c-237196b6ee32" name="Default" comment="" />
     <ignored path="website.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
