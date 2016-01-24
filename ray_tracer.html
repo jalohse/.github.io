@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ray Tracer</title>
+    <link rel="icon" type="image/png" href="img/logoIcon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="import" href="bower_components/polymer-slideshow/polymer-slideshow.html">
+    <link rel="import" href="bower_components/polymer-slideshow/polymer-slide.html">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-69983601-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+<header>
+    <div class="row">
+
+        <div class="small-3 columns"><img src="img/logo-01.svg" class="logo" alt="jessica-logo"></div>
+
+        <nav class="small-9 small-offset-4  medium-6 medium-offset-5 large-5 large-offset-6 columns">
+            <ul>
+                <li>
+                    <a href="#background" onclick="ga('send', 'event', 'menu link', 'click', 'Thesis-Background');">Background</a>
+                </li>
+                <li>
+                    <a href="#ray_tracer" onclick="ga('send', 'event', 'menu link', 'click', 'Thesis-RayTracer');">Ray
+                        Tracer</a>
+                </li>
+                <li>
+                    <a href="#tests" onclick="ga('send', 'event', 'menu link', 'click', 'Thesis-Tests');">Tests</a>
+                </li>
+                <li>
+                    <a href="index.html">Main Page</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<section id="background">
+    <h3>Background</h3>
+    <p class="thesisText">For the Ball State Honors College, every senior must complete a Honors Thesis. This thesis can
+        either be something related to their major, something they feel was lacking during their time at Ball State, or
+        something completely unrelated to anything they did. I had taken one class in computer graphics, but it was not
+        as encompassing as I had hoped when I signed up for it. Seeing as my ultimate goal is to work at an animation
+        company on their animation software, I decided to educate myself in the rendering algorithms that make 3D
+        animation possible. </p>
+    <p class="thesisText">I started working on this project the summer of 2015 and will finish the paper by my
+        graduation date of May 2016. The thesis will have two main parts. The first will detail a handful of algorithms
+        that were developed over the years that were important to the industry. These include hidden line and
+        z-buffering algorithms, ray casting algorithms, scanline algorithms, ray tracing algorithms, radiosity
+        algorithms, the rendering equation, and the REYES rendering algorithm. The second part will detail my own tests
+        based on a ray tracer I created in Java. </p>
+</section>
+<section id="ray_tracer">
+    <h3>Ray Tracer</h3>
+    <p class="thesisText small-12 medium-7 columns">One of the books that I found in the Ball State Library was the
+        first edition of Peter
+        Shirley's <i>Realistic Ray Tracing.</i> Because of the step by step description of how to create your own ray
+        tracer, I decided to use this book to create my own ray tracer. I knew that by creating my ray tracer in Java,
+        the language I am most competent in, I could then easily create an Android application using the same code.
+        While I started working through the book I also suggested that Ball State obtain the second edition because I
+        had heard that it was slightly easier to understand and had code examples. My ray tracer for this reason is a
+        mix of both versions of <i>Realistic Ray Tracing.</i> If you are interested in seeing how the ray tracer is set
+        up or how I progressed, you can view the project
+        <a href="https://github.com/jalohse/ray_tracer" class="purpleLink">here</a>.</p>
+    <p class="thesisText small-12 medium-7 columns"> Once I completed the ray tracer to a point where I could create
+        images and had implemented a
+        majority of the functionality I wanted, I started to create an Android application that I could test with. I
+        used my own experience from working at the Digital Corps to create a simple application that would create an
+        image, save the image on the phone, and display how long it took to generate. Some things had to be changed in
+        this process, including the libraries that were used for the creation of images. Android applications currently
+        do not support BufferedImages, so some changes to the ray tracer were needed to support Bitmaps instead. The
+        source code for the app can be found
+        <a href="https://github.com/jalohse/RayTracerApp" class="purpleLink">here</a> as an Android Studio application
+        and supports a minimum Android version of 15. </p>
+    <img src="img/raytracer/raytracerapp.png">
+</section>
+<section id="tests">
+    <h3>Tests</h3>
+    <p class="thesisText">While working through the books, I wondered what objects or aspects of a generated image were
+        the most computationally expensive, especially across different devices. I decided to look at 6 different
+        aspects of my ray tracer that could affect the generation time: number of objects, the size of the image, a
+        sphere versus a triangle object, different colorings of an object, the effect of adding a light to an image, and
+        the size of a image texture. Other than the image size tests, each image is 500 by 500 pixels. I tested these
+        images on my 15-inch MacBook Pro with 16GB running OSX 10.11.2, Intel Core i7 2670QM CPU, and Intel Iris Pro
+        1536 GPU; an HTC M8 with 2GB running Android 5.0.2, Qualcomm Snapdragon 800 MSM8974 CPU, and Adreno 330 GPU; and
+        a Samsung Galaxy S3 with 2GB running Android 4.4.2, Qualcomm Snapdragon S4 Plus MSM8960 CPU, and Andreno 225
+        GPU. All graphs are shown with the y-axis being in terms on milliseconds.
+    </p>
+    <h4>Object Tests</h4>
+    <p class="thesisText small-12 medium-7 columns"> The first tests I decided to try were just to see how much more
+        computational power was needed by adding a few objects. I drew out the layout for the image over Christmas
+        break, hence the snowman theme. I started out with one object, the next with three, then eleven, sixteen,
+        twenty one, and lastly twenty four objects. As expected, the laptop was able to generate the image much faster
+        than the HTC M8 which was much faster than the Galaxy S3. The graphs showing the time for each of these images
+        is not included, because of this fact. However, I do include the graphs for each platform that the images were
+        tested on below.
+    </p>
+    <p class="thesisText small-12 medium-7 columns"> When I saw the results of these tests, I found the big jump from
+        three objects to eleven objects very interesting. It was more than three times the amount of time it took to
+        generate three objects. This eventually lead me to complete the tests on a sphere versus a triangle object.</p>
+    <div class="slideshow" style="margin: auto; padding-bottom: 15px">
+        <!-- Start cssSlider.com -->
+        <!-- Generated by cssSlider.com 2.1 -->
+        <link rel="stylesheet" href="css/cssslider_files/csss_engine1/style.css">
+        <!--[if IE]>
+        <link rel="stylesheet" href="css/cssslider_files/csss_engine1/ie.css"><![endif]-->
+        <!--[if lte IE 9]>
+        <script type="text/javascript" src="css/cssslider_files/csss_engine1/ie.js"></script><![endif]-->
+        <div class='csslider1 autoplay ' style="width:300px; height: 300px;">
+            <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide'>
+            <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide'>
+            <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide'>
+            <input name="cs_anchor1" id='cs_slide1_3' type="radio" class='cs_anchor slide'>
+            <input name="cs_anchor1" id='cs_slide1_4' type="radio" class='cs_anchor slide'>
+            <input name="cs_anchor1" id='cs_slide1_5' type="radio" class='cs_anchor slide'>
+            <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
+            <ul>
+                <li class="cs_skeleton"><img src="img/raytracer/objtests/OTOneObject.png"
+                                             style="width: 300px; height: 300px"></li>
+                <li class='num0 img slide'><img src='img/raytracer/objtests/OTOneObject.png' alt='One Object'
+                                                title='One Object'/></li>
+                <li class='num1 img slide'><img src='img/raytracer/objtests/OTThreeObject.png' alt='OTThreeObject'
+                                                title='OTThreeObject'/></li>
+                <li class='num2 img slide'><img src='img/raytracer/objtests/OTElevenObject.png' alt='OTElevenObject'
+                                                title='OTElevenObject'/></li>
+                <li class='num3 img slide'><img src='img/raytracer/objtests/OTSixteenObject.png' alt='OTSixteenObject'
+                                                title='OTSixteenObject'/></li>
+                <li class='num4 img slide'><img src='img/raytracer/objtests/OTTwentyOneObject.png'
+                                                alt='OTTwentyOneObject' title='OTTwentyOneObject'/></li>
+                <li class='num5 img slide'><img src='img/raytracer/objtests/OTSnowImage.png' alt='OTSnowImage'
+                                                title='OTSnowImage'/></li>
+            </ul>
+
+
+            <div class='cs_arrowprev'>
+                <label class='num0' for='cs_slide1_0'><span><i></i><b></b></span></label>
+                <label class='num1' for='cs_slide1_1'><span><i></i><b></b></span></label>
+                <label class='num2' for='cs_slide1_2'><span><i></i><b></b></span></label>
+                <label class='num3' for='cs_slide1_3'><span><i></i><b></b></span></label>
+                <label class='num4' for='cs_slide1_4'><span><i></i><b></b></span></label>
+                <label class='num5' for='cs_slide1_5'><span><i></i><b></b></span></label>
+            </div>
+            <div class='cs_arrownext'>
+                <label class='num0' for='cs_slide1_0'><span><i></i><b></b></span></label>
+                <label class='num1' for='cs_slide1_1'><span><i></i><b></b></span></label>
+                <label class='num2' for='cs_slide1_2'><span><i></i><b></b></span></label>
+                <label class='num3' for='cs_slide1_3'><span><i></i><b></b></span></label>
+                <label class='num4' for='cs_slide1_4'><span><i></i><b></b></span></label>
+                <label class='num5' for='cs_slide1_5'><span><i></i><b></b></span></label>
+            </div>
+
+        </div>
+        <!-- End cssSlider.com -->
+    </div>
+    <div style="text-align: center">
+        <img src="img/raytracer/objtests/objlaptop.png">
+        <img src="img/raytracer/objtests/objm8.png">
+        <img src="img/raytracer/objtests/objs3.png">
+    </div>
+    <h4> Size Tests</h4>
+    <p class="thesisText">Hello</p>
+</section>
+<footer>
+    <div class="row">
+        <div class="social-media small-5 columns">
+            <ul>
+                <li><a href="https://github.com/jalohse"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/pub/jessica-lohse/b5/244/6a3"><i class="fa fa-linkedin fa-lg"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="small-7 large-6 large-offset-1 columns">
+            <nav>
+                <ul>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#ray_tracer">Ray Tracer</a></li>
+                    <li><a href="#tests">Tests</a></li>
+                    <li><a href="index.html">Main Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script type="text/javascript" src="js/foundation.min.js"></script>
+</html>
