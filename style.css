@@ -269,3 +269,8 @@ footer .social-media i {
 .purpleLink {
     color: #885aa4;
 }
+
+#ray_tracing {
+    top: 12px;
+    margin-bottom: 30px;
+}
