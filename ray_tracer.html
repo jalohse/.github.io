@@ -99,16 +99,33 @@
     <h3>Tests</h3>
     <p class="thesisText">While working through the books, I wondered what objects or aspects of a generated image were
         the most computationally expensive, especially across different devices. I decided to look at 6 different
-        aspects of my ray tracer that could affect the generation time: number of objects, the size of the image, a
-        sphere versus a triangle object, different colorings of an object, the effect of adding a light to an image, and
-        the size of a image texture. Other than the image size tests, each image is 500 by 500 pixels. I tested these
+        aspects of my ray tracer that could affect the generation time:
+        <a  class="purpleLink"
+            href="#texture" onclick="ga('send', 'event', 'menu link', 'click', 'Test-texure');">the size of a image
+            texture</a>,
+        <a class="purpleLink"
+           href="#object" onclick="ga('send', 'event', 'menu link', 'click', 'Test-object');">number of objects</a>,
+        <a  class="purpleLink"
+            href="#sphere" onclick="ga('send', 'event', 'menu link', 'click', 'Test-sphere');">a sphere versus a triangle
+            object</a>,
+        <a class="purpleLink"
+           href="#light" onclick="ga('send', 'event', 'menu link', 'click', 'Test-light');">the effect of adding a light
+            to an image</a>,
+        <a class="purpleLink"
+           href="#color" onclick="ga('send', 'event', 'menu link', 'click', 'Test-color');">different colorings of an
+            object</a>, and
+        <a class="purpleLink"
+           href="#color" onclick="ga('send', 'event', 'menu link', 'click', 'Test-color');">the size of the image</a>.
+
+        Other than the image size tests, each image is 500 by 500 pixels. I tested these
         images on my 15-inch MacBook Pro with 16GB running OSX 10.11.2, Intel Core i7 2670QM CPU, and Intel Iris Pro
         1536 GPU; an HTC M8 with 2GB running Android 5.0.2, Qualcomm Snapdragon 800 MSM8974 CPU, and Adreno 330 GPU; and
         a Samsung Galaxy S3 with 2GB running Android 4.4.2, Qualcomm Snapdragon S4 Plus MSM8960 CPU, and Andreno 225
-        GPU. All graphs are shown with the y-axis being in terms on milliseconds. As I complete more of my thesis, this
+        GPU. Each image was generated ten times on each device and an average time is shown on the graphs included.
+        All graphs are shown with the y-axis being in terms on milliseconds. As I complete more of my thesis, this
         section will be updated!
     </p>
-    <h4>Texture Tests</h4>
+    <h4 id="texture" >Texture Tests</h4>
     <p class="thesisText"> Lastly, I took a rectangle image of an unwrapped globe and used that as a texture for a
         sphere. The purpose of these tests were to see how much more time was needed when a texture such as this was
         doubled or more for better quality. I used the same texture for each sphere but increased the sizes from 512
@@ -130,7 +147,7 @@
         <img src="img/raytracer/texture/TTXSmallImage.png" style="padding: 10px">
         <img src="img/raytracer/texture/TTLargeImage.png" style="padding: 10px">
     </div>
-    <h4>Object Tests</h4>
+    <h4 id="object" >Object Tests</h4>
     <p class="thesisText small-12 medium-7 columns"> The first tests I decided to try were just to see how much more
         computational power was needed by adding a few objects. I drew out the layout for the image over Christmas
         break, hence the snowman theme. I started out with one object, the next with three, then eleven, sixteen,
@@ -201,7 +218,7 @@
         <img src="img/raytracer/objtests/objm8.png">
         <img src="img/raytracer/objtests/objs3.png">
     </div>
-    <h4>Sphere versus Triangle Tests</h4>
+    <h4 id="sphere" >Sphere versus Triangle Tests</h4>
     <p class="thesisText"> When I conducted the object tests, it occured to me that generating a triangle could possibly
         take more power than generating a circle. I completed four tests in total: an image with one sphere, an image
         with one triangle, an image with two spheres, and an image with two triangles. To keep each case similar, I
@@ -222,7 +239,7 @@
         sphere or triangle. On each devices, not that much more time was needed for the addition of one more sphere.
         However, the opposite was true of adding another triangle, again because of the amount of math needed to create
         it. </p>
-    <h4>Light Tests</h4>
+    <h4 id="light" >Light Tests</h4>
     <p class="thesisText"> Something that I guessed would cause more time to produce was the addition of a light source.
         I was surprised to see that the adding one light to a scene really did not increase the time by very much. Just
         from looking at the output and thinking about how lights and shadows are implemented, I would guess this is
@@ -234,7 +251,7 @@
         <img src="img/raytracer/lights/LTOneLightImage.png" style="padding: 10px">
         <img src="img/raytracer/lights/graph.png" style="padding: 10px">
     </div>
-    <h4>Color Tests</h4>
+    <h4 id="color" >Color Tests</h4>
     <div style="text-align: center">
         <img src="img/raytracer/colors/CTBlackAndWhiteImage.png" style="padding: 10px">
         <img src="img/raytracer/colors/CTColoredSphereImage.png" style="padding: 10px">
@@ -250,7 +267,7 @@
         the noise texture on top of its even more advanced computations, causing it to take the longest to be produced
         on each device.</p>
     <img src="img/raytracer/colors/graph.png">
-    <h4> Size Tests</h4>
+    <h4 id="size" > Size Tests</h4>
     <p class="thesisText small-12 medium-7 columns">I next decided to look at how different sized images would affect
         the processing time needed. I created an image that had a colored triangle covering half of the image at sizes
         125 pixels by 125 pixels (small), 250 pixels by 250 pixels (medium), and 500 pixels by 500 pixels (large). While
