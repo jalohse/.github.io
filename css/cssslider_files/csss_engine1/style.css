@@ -444,7 +444,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
   animation: nextArrow1 .7s infinite ease-in-out;
 }
 .csslider1 > .cs_arrowprev:hover > label span {
-  color: #000;
+  /*color: #000;*/
   -webkit-animation: prevArrow1 .7s infinite ease-in-out;
   animation: prevArrow1 .7s infinite ease-in-out;
 }

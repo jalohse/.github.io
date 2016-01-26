@@ -105,7 +105,8 @@
         images on my 15-inch MacBook Pro with 16GB running OSX 10.11.2, Intel Core i7 2670QM CPU, and Intel Iris Pro
         1536 GPU; an HTC M8 with 2GB running Android 5.0.2, Qualcomm Snapdragon 800 MSM8974 CPU, and Adreno 330 GPU; and
         a Samsung Galaxy S3 with 2GB running Android 4.4.2, Qualcomm Snapdragon S4 Plus MSM8960 CPU, and Andreno 225
-        GPU. All graphs are shown with the y-axis being in terms on milliseconds.
+        GPU. All graphs are shown with the y-axis being in terms on milliseconds. As I complete more of my thesis, this
+        section will be updated!
     </p>
     <h4>Object Tests</h4>
     <p class="thesisText small-12 medium-7 columns"> The first tests I decided to try were just to see how much more
@@ -179,7 +180,83 @@
         <img src="img/raytracer/objtests/objs3.png">
     </div>
     <h4> Size Tests</h4>
-    <p class="thesisText">Hello</p>
+    <p class="thesisText small-12 medium-7 columns">I next decided to look at how different sized images would affect
+        the processing time needed. I created an image that had a colored triangle covering half of the image at sizes
+        125 pixels by 125 pixels (small), 250 pixels by 250 pixels (medium), and 500 pixels by 500 pixels (large). While
+        there was very little difference in processing time on the laptop, that cannot be said for the smartphones.
+    </p>
+    <img src="img/raytracer/sizetests.png">
+    <h4>Sphere versus Triangle Tests</h4>
+    <p class="thesisText"> When I conducted the object tests, it occured to me that generating a triangle could possibly
+        take more power than generating a circle. I completed four tests in total: an image with one sphere, an image
+        with one triangle, an image with two spheres, and an image with two triangles. To keep each case similar, I
+        calculated the area of the triangles to have the same area as the circles that would be shown on the image.</p>
+    <div style="text-align: center">
+        <img src="img/raytracer/spheretri/one.png">
+        <img src="img/raytracer/spheretri/two.png">
+    </div>
+    <p class="thesisText">As I observed in the object tests, computing triangles was much more computationally heavily
+        than creating spheres. This makes sense when you take into account the math that is needed to generate a
+        triangle. When doing so, it is necessary to calculate where the center of the triangle is in respect to its
+        points. This added complexity causes the computation time to be much larger.</p>
+    <div style="text-align: center">
+        <img src="img/raytracer/spheretri/spheres.png">
+        <img src="img/raytracer/spheretri/tri.png">
+    </div>
+    <p class="thesisText">I found it interesting as well comparing how much more time was needed when adding a second
+        sphere or triangle. On each devices, not that much more time was needed for the addition of one more sphere.
+        However, the opposite was true of adding another triangle, again because of the amount of math needed to create
+        it. </p>
+    <h4>Color Tests</h4>
+    <div style="text-align: center">
+        <img src="img/raytracer/colors/CTBlackAndWhiteImage.png" style="padding: 10px">
+        <img src="img/raytracer/colors/CTColoredSphereImage.png" style="padding: 10px">
+        <img src="img/raytracer/colors/CTNoiseSphereImage.png" style="padding: 10px">
+        <img src="img/raytracer/colors/CTMarbleSphereImage.png" style="padding: 10px">
+    </div>
+    <p class="thesisText small-12 medium-7 columns"> I wondered if the colors or textures that an object had would
+        affect the processing time as well. I created an image that had a white sphere, another with a green sphere, a
+        sphere with a algorithmically generated noise texture, and a sphere with an algorithmically generated marble
+        texture. The difference between the first two images was almost nothing, even on the Samsung S3 which has proven
+        itself to be the device that had the most trouble generating things. The noise texture, because of the complex
+        mathematics involved, takes slightly longer to produce. The marble texture uses some of the same mathematics as
+        the noise texture on top of its even more advanced computations, causing it to take the longest to be produced
+        on each device.</p>
+    <img src="img/raytracer/colors/graph.png">
+    <h4>Light Tests</h4>
+    <p class="thesisText"> Something that I guessed would cause more time to produce was the addition of a light source.
+        I was surprised to see that the adding one light to a scene really did not increase the time by very much. Just
+        from looking at the output and thinking about how lights and shadows are implemented, I would guess this is
+        because about half of the pixels are no longer being colored since the light cannot hit them through the object.
+        The fewer pixels make up for the lost processing time and make the two close to being equal. I will be
+        investigating thismore thoroughly! </p>
+    <div style="text-align: center">
+        <img src="img/raytracer/lights/LTNoLightImage.png" style="padding: 10px">
+        <img src="img/raytracer/lights/LTOneLightImage.png" style="padding: 10px">
+        <img src="img/raytracer/lights/graph.png" style="padding: 10px">
+    </div>
+    <h4>Texture Tests</h4>
+    <p class="thesisText"> Lastly, I took a rectangle image of an unwrapped globe and used that as a texture for a
+        sphere. The purpose of these tests were to see how much more time was needed when a texture such as this was
+        doubled or more for better quality. I used the same texture for each sphere but increased the sizes from 512
+        pixels by 1024 pixels to 1024 pixels by 2048 pixels to 2048 pixels by 4096 pixels to finally 4096 pixels by 8192
+        pixels. Unfortunately, only the laptop was able to create an image with the last three sizes. The phones both
+        ran out of memory before the images could be completed and saved. I compare their rendering times below. </p>
+    <div style="text-align: center">
+        <img src="img/raytracer/texture/graph.png" style="padding: 10px">
+    </div>
+    <p class="thesisText">When comparing the smallest texture to the largest one, it may be hard to see the differences
+        at first. However, the second image has slightly more definition and features than the other. The ice at the
+        equator has a few extra colors and the shapes of the clouds are more pronounced. Something that particularly
+        jumps out is the gray area around the Himalayan Mountains. It has more depth than the smaller texture, something
+        that can also be seen in the mountain areas of North America. Larger textures would not be suitable for devices
+        such as smartphones that do not have the memory to produce such detailed images, but more memory can lead to
+        more detailed and brightly colored objects than what phones can.
+    </p>
+    <div style="text-align: center">
+        <img src="img/raytracer/texture/TTXSmallImage.png" style="padding: 10px">
+        <img src="img/raytracer/texture/TTLargeImage.png" style="padding: 10px">
+    </div>
 </section>
 <footer>
     <div class="row">
