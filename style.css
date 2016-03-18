@@ -270,6 +270,10 @@ footer .social-media i {
     color: #885aa4;
 }
 
+.purpleLink:hover {
+    color: #885aa4;
+}
+
 #ray_tracing {
     top: 12px;
     margin-bottom: 30px;
