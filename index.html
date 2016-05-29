@@ -74,10 +74,11 @@
 
     <div class="row">
         <div class="small-12 medium-7 columns" style="z-index: 0">
-            <p class="about-text">Hi! My name is Jessica Lohse. I am a software engineer currently attending Ball State
-                University.
-                I also work on mobile and backend projects for the University through employment at the Digital Corps.
-                In my spare time, I enjoy programming various applications, reading, and spending time with my friends
+            <p class="about-text">Hi! My name is Jessica Lohse. I am a software engineer currently attending the
+                University of Utah pursuing a MS in Computing with a specialization in Graphics and Visualization.
+                I have a BA in Computer Science from Ball State University, where I graduated Summa Cum Laude and worked
+                at a company called the Digital Corps for 3 years developing applications for the university. In my
+                spare time, I enjoy programming various applications, reading, and spending time with my friends
                 and family.
                 Feel free to look through my site and contact me at jessicaalohse@gmail.com if you have questions!</p>
 
@@ -85,20 +86,9 @@
 
             <div class="about-text-list">
                 <ul>
-                    <li><b>A Look at Rendering Algorithms and Implementations for Mobile</b> - My honors thesis for Ball
-                        State University. I created my own ray tracer based on Peter Shirley's <i>Realistic Ray Tracing</i>
-                        to compare run times on a laptop versus smartphones.
-                        <a href="ray_tracer.html" class="purpleLink"><b>Find out more!</b></a>
-                    </li>
-                    <li><b>Carillon Jukebox</b> - An application for a Ball State professor that will allow students to
-                        play songs on the carillon housed inside Ball State's Shafer Tower.
-                    </li>
-                    <li><b>Digital Corps Scholarship Application</b> - Creating an online application for high school
-                        seniors to fill out to apply for a scholarship offered through the Digital Corps.
-                    </li>
-                    <li><b>Narrative Based Game</b> - Together with a group of Ball State students, we will create a
-                        narrative rich game that aims to teach children cultural literacy through the stories of
-                        regional monsters.
+                    <li><b>Summer Learning</b> - In preparation for my studies this coming fall, I am working on
+                        learning some important things. I am watching the Khan Academy videos on linear algebra and
+                        multivariable calculus. I am also teaching myself C++ and Python.
                     </li>
                 </ul>
             </div>
@@ -116,40 +106,35 @@
     <div class="row">
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
-                <img src="img/achievements.png">
+                <img src="img/raytracer/texture/TTXSmallImage.png">
             </div>
             <div class="project-description small-12 columns">
-                <h4>Ball State Achievements</h4>
+                <h4>Mobile Rendering: Algorithms, Implementation, and Performance</h4>
 
-                <p>The Ball State Achievements app is an application that gamifies the college experience and is aimed
-                    at achieving higher scholarship and higher retention rates of students.
-                    During the summer of 2014 I worked on developing the backend of this application in PHP.
-                    I have helped add new features, fix bugs and other errors, and refactor the project to increase
-                    readability and decrease repeated code in both the Android and iOS versions. This app is also
-                    currently a Mira Award Finalist.
-                    The app is available to all freshman and sophomore students at Ball State University on the <a
-                            href="https://itunes.apple.com/us/app/ball-state-achievements/id901996872?mt=8"
-                            class="purpleLink">App Store</a>
-                    and <a href="https://play.google.com/store/apps/details?id=com.frogbabyapps.achievements&hl=en>"
-                           class="purpleLink">Google Play</a>.</p>
+                <p>In my senior honors thesis for Ball State University, a brief look into the history of algorithms
+                    that have been instrumental throughout the development of three-dimensional images is given. The
+                    findings found from creating a custom ray tracer and the differences between rendering times on a
+                    laptop versus two different mobile devices are then presented. Lastly, a summary of all of the
+                    findings and ideas about how these algorithms can be improved to run more efficiently on mobile
+                    devices are offered.
+                    <a href="ray_tracer.html" class="purpleLink">Find out more!</a></p>
             </div>
         </div>
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
-                <img src="img/bsuRec.png">
+                <img src="img/scheduler.png">
             </div>
             <div class="project-description small-12 columns">
-                <h4>Ball State Rec Center</h4>
+                <h4>Digital Corps Scheduler</h4>
 
-                <p>The BSU Rec app displays the current number of people present in specific areas of the Ball State
-                    Recreation and Wellness Center.
-                    In early 2014 I worked with the backend logic to increase the accuracy of the numbers received from
-                    the Rec Center.
-                    I single-handedly revitalized the aging Android app to account for new Android API’s and add new
-                    features for the Digital Corps in the spring of 2015.
-                    The app is available on the <a
-                            href="https://play.google.com/store/apps/details?id=air.edu.bsu.rec&hl=en>"
-                            class="purpleLink">Google Play Store.</a></p>
+                <p>Using Python and Django, I created a scheduler application for the Digital Corps. I completed all
+                    parts of this application myself, other than the design and inital requirements. This application
+                    first grabs all of the students currently working at the Corps from our internal employee directory
+                    and stores their information in a SQLite database. Each student is then displayed on the main page,
+                    and a staff member can select any number of students, the day, start and end times, and the length
+                    of time they desire for a meeting to be. The application then connects to the Google Calendar API to
+                    grab all events for the selected users and finds possible times for each student to meet. </p>
+
             </div>
         </div>
         <div class="individual-project small-12 large-4  large-offset-0 columns">
@@ -164,14 +149,131 @@
                     The goal was to allow students to create their own stage layout for A Midsummer Night's Dream.
                     Using WebGL, we loaded in different models and materials created by an animator and then set up the
                     options to move the objects around the stage, adjust lighting, and the ability to remove or target
-                    certain objects.
-                    The simulator also includes an export option that takes pictures of different views, a list of
-                    objects, and lighting information
-                    for grading purposes. The simulator can be found <a
+                    certain objects. The simulator also includes an export option that takes pictures of different
+                    views, a list of objects, and lighting information for grading purposes. The simulator can be found
+                    <a
                             href="http://apso.bsu.edu/2015/theatre/"
                             class="purpleLink">here.</a></p>
             </div>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="individual-project small-12 large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
+                <img src="img/achievements.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Ball State Achievements</h4>
+
+                <p>The Ball State Achievements app is an application that gamifies the college experience and is aimed
+                    at achieving higher scholarship and higher retention rates of students.
+                    During the summer of 2014 I worked on developing the backend of this application in PHP.
+                    I have helped add new features, fix bugs and other errors, and refactor the project to increase
+                    readability and decrease repeated code in both the Android and iOS versions. This app was a Mira
+                    Award Finalist in 2015.
+                    The app is available to all freshman and sophomore students at Ball State University on the <a
+                            href="https://itunes.apple.com/us/app/ball-state-achievements/id901996872?mt=8"
+                            class="purpleLink">App Store</a>
+                    and <a href="https://play.google.com/store/apps/details?id=com.frogbabyapps.achievements&hl=en>"
+                           class="purpleLink">Google Play</a>.</p>
+            </div>
+        </div>
+        <div class="individual-project small-12 large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
+                <img src="img/scholarship.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Digital Corps Scholarship Application</h4>
+
+                <p>For my last major project at the Digital Corps at Ball State, I became Junior Project Manager for the
+                    Digital Corps Scholarship Application. I was tasked with setting up meetings, following major
+                    deadlines and creating intermediary deadlines, ensuring every team member was where they needed to
+                    be, and making sure the product met our requirements. On top of all of these duties, I also created
+                    a PHP backend for the system and helped put together the admin and user interfaces. This application
+                    is being used by the Digital Corps to give incoming freshman both a scholarship and a job for the
+                    following fall.</p>
+
+            </div>
+        </div>
+        <div class="individual-project small-12 large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
+                <img src="img/monstertales.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Traveler's Notebook: Monster Tales</h4>
+
+                <p>As an immersive learning course, I worked with an multidisciplinary of ten undergraduate students
+                    representing Animation, Computer Science, Creative Writing, Philosophy, and Telecommunication majors
+                    and a faculty advisor to create a mobile game for 4th grade reading level students. Our goals were
+                    to encourage children to read more and to give them cultural empathy. To do this, students play as
+                    journalist trying to find the most inspirational encounters with monsters throughout the world for
+                    their next book. The game uses PlayN to perform on multiple platforms.<a
+                            href="http://studio-368.github.io/"
+                            class="purpleLink">Play the game here!</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="individual-project small-12 large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
+                <img src="img/carillonjukebox.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Carillon Jukebox</h4>
+
+                <p>For my senior capstone project for the Computer Science Department at Ball State University, I, along
+                    with two other team members, created an application for one of the music professors on campus. The
+                    goal of the application was to allow students to play songs from the carillon that is housed in
+                    Shafer Tower on campus. I served as the project manager, keeping communication between ourselves and
+                    the client constant and making sure we were meeting all of our requirements, and the backend and
+                    Android application developer. This application interfaces with BrainTree to handle payments.
+                </p>
+            </div>
+        </div>
+        <div class="individual-project small-12 large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
+                <img src="img/bsuRec.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Ball State Rec Center</h4>
+
+                <p>The BSU Rec app displays the current number of people present in specific areas of the Ball State
+                    Recreation and Wellness Center. In early 2014 I worked with the backend logic to increase the
+                    accuracy of the numbers received from the Rec Center. I single-handedly revitalized the aging
+                    Android app to account for new Android API’s and add new features for the Digital Corps in the
+                    spring of 2015. The app is available on the <a
+                            href="https://play.google.com/store/apps/details?id=air.edu.bsu.rec&hl=en>"
+                            class="purpleLink">Google Play Store.</a></p>
+            </div>
+        </div>
+        <div class="individual-project large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-6 medium-offset-3 large-13 large-offset-0-5 columns">
+                <img src="img/stitching.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Distributed Stitching Simulator</h4>
+
+                <p>I served as a undergraduate research assistant in the spring of 2015 for one the computer science
+                    professors at Ball State. I created a graphical user interface to simulate the proposed distributed
+                    approach that would increase the efficiency of current video stitching algorithms.</p>
+            </div>
+        </div>
+        <div class="individual-project large-4  large-offset-0 columns">
+            <div class="project-description small-12 columns">
+                <h4>Creative Associates Game</h4>
+
+                <p>The Digital Corps of Ball State was asked by Creative Associates to develop a game to teach values
+                    such as honesty and money management to children in third world countries in the spring of 2014.
+                    I provided assistance in developing a scripting tool for the game in PHP, but mostly worked on the
+                    Android based game. I helped implement sound, saving and restoring of the game, and implemented cut
+                    scenes. The game was never finished because of time constraints.</p>
+            </div>
+        </div>
+
+        <!--<div class="project-arrow small-1">-->
+        <!--<img src="img/arrow-03-03.svg">-->
+        <!--</div>-->
     </div>
     <div class="row">
         <div class="individual-project small-12 large-4  large-offset-0 columns">
@@ -182,14 +284,13 @@
                 <h4>Exceptional Me</h4>
 
                 <p>Exceptional Me was an app that was created with the help of an immersive learning class that was
-                    targeted to help twice-exceptional students keep track of their school work.
-                    The app allows students to create tasks and milestones to remind them that they need to do certain
-                    assignments and bring home certain materials.
-                    I jumped into the project after a year hiatus to release the app for students to use.
-                    I implemented new features, including a edit screen where students could edit their classes,
-                    milestones, and materials and set up push notifications to remind students what supplies needed to
-                    be brought home.
-                    The app will be released to a Muncie Elementary School in a private app store.
+                    targeted to help twice-exceptional students keep track of their school work. The app allows students
+                    to create tasks and milestones to remind them that they need to do certain assignments and bring
+                    home certain materials. I jumped into the project after a year hiatus to release the app for
+                    students to use. I implemented new features, including a edit screen where students could edit their
+                    classes, milestones, and materials and set up push notifications to remind students what supplies
+                    needed to be brought home. The app will be released to a Muncie Elementary School in a private app
+                    store.
                 </p>
             </div>
         </div>
@@ -201,47 +302,15 @@
                 <h4>Ball State Map App</h4>
 
                 <p>The Ball State Map App allows students to find buildings, services, and directions to different
-                    buildings on campus.
-                    Starting at the beginning of the summer 2015, I worked on fixing bugs that had persisted in the app
-                    since the last release and updating the app to run on iOS 8.
-                    Once finished I worked with team members to complete a redesign of the previous app adding new
-                    functionality.
-                    The app was released for beginning of the Fall 2015 semester and is available on the <a
+                    buildings on campus. Starting at the beginning of the summer 2015, I worked on fixing bugs that had
+                    persisted in the app since the last release and updating the app to run on iOS 8. Once finished I
+                    worked with team members to complete a redesign of the previous app adding new
+                    functionality. The app was released for beginning of the Fall 2015 semester and is available on the
+                    <a
                             href="https://itunes.apple.com/us/app/ball-state-university-campus/id353148218?mt=8"
                             class="purpleLink">App Store.</a></p>
             </div>
         </div>
-        <div class="individual-project large-4  large-offset-0 columns">
-            <div class="project-image small-10 small-offset-1 medium-6 medium-offset-3 large-13 large-offset-0-5 columns">
-                <img src="img/stitching.png">
-            </div>
-            <div class="project-description small-12 columns">
-                <h4>Distributed Stitching Simulator</h4>
-
-                <p>I served as a undergraduate research assistant in the spring of 2015 for one the computer science
-                    professors at Ball State.
-                    I created a graphical user interface to simulate the proposed distributed approach that would
-                    increase the efficiency of current video stitching algorithms.</p>
-            </div>
-        </div>
-        <div class="individual-project large-4  large-offset-0 columns">
-            <div class="project-description small-12 columns">
-                <h4>Creative Associates Game</h4>
-
-                <p>The Digital Corps of Ball State was asked by Creative Associates to develop a game to teach values
-                    such as honesty and money management to children in third world countries in the spring of 2014.
-                    I provided assistance in developing a scripting tool for the game in PHP, but mostly worked on the
-                    Android based game.
-                    I helped implement sound, saving and restoring of the game, and implemented cut scenes. The game was
-                    never finished because of time constraints.</p>
-            </div>
-        </div>
-
-        <!--<div class="project-arrow small-1">-->
-        <!--<img src="img/arrow-03-03.svg">-->
-        <!--</div>-->
-    </div>
-    <div class="row">
         <div class="individual-project large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">
                 <img src="img/myvoice.svg">
@@ -260,6 +329,9 @@
                 </p>
             </div>
         </div>
+
+    </div>
+    <div class="row">
         <div class="individual-project large-4  large-offset-0 columns">
             <div class="project-description small-12 columns">
                 <h4>Indianapolis Airport Authority Website</h4>
@@ -290,7 +362,7 @@
                             href="https://www.hackerleague.org/hackathons/texas-vs-indiana-challenge/hacks/idhs-sos-app"
                             class="purpleLink">here</a>. I also was able to be part of an interview about the project
                     and the Digital Corps on the <a href="https://youtu.be/hS9h1KMa4fs?t=12m53s" class="purpleLink"
-                                                    >Indiana Public Broadcasting Network.</a>
+                    >Indiana Public Broadcasting Network.</a>
                 </p>
             </div>
         </div>
