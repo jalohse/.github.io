@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fe6cd4c-27b1-4cd0-b27c-237196b6ee32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/potter_plots.png" afterPath="$PROJECT_DIR$/img/potter_plots.png" />
     </list>
     <ignored path="website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -292,12 +292,12 @@
       <workItem from="1476917081815" duration="172000" />
       <workItem from="1477789907705" duration="27000" />
       <workItem from="1477789950967" duration="32000" />
-      <workItem from="1482460473726" duration="998000" />
+      <workItem from="1482460473726" duration="1139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7361000" />
+    <option name="totallyTimeSpent" value="7502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="24" width="1347" height="873" extended-state="0" />
