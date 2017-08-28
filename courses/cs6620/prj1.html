@@ -1,0 +1,47 @@
+<html>
+<header>
+</header>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 1 - Ray Casting</h2>
+	<h3> Results </h3>
+	Rendered in 0:00:09 with one thread,  0:00:03 with seven threads plus the main thread.
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<td><img src="proj1.png" width="100%"></td>
+				<td><img src="zbuffer.png" width="100%"></td>
+			</tr>
+			<tr>
+				<td style="text-align: center">Rendered Image</td>
+				<td style="text-align: center">Normalized Z-Buffer</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped Mac
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7-4870HQ CPU @ 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Project Stumbling Blocks</h3>
+		For awhile, I got stuck because my spheres seemed slightly skewed and the camera
+		seemed farther away than it should have been.
+		<img src="proj1_fail.png" width="50%">
+		<p>
+		The problem was that I forgot to take the square root of the discriminant when
+		calculating sphere-ray intersection so all t values were off.
+		</p>
+</body>
+</html>
