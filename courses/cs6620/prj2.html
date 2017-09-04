@@ -4,20 +4,35 @@
 </head>
 <body>
 	<h1>CS6620 - Ray Tracing for Graphics</h1>
-	<h2>Project 1 - Ray Casting</h2>
+	<h2>Project 2 - Shading</h2>
 	<h3> Results </h3>
-	Rendered in 0:00:09 with one thread,  0:00:03 with seven threads plus the main thread.
+	Rendered in 0:00:06 with seven threads plus the main thread.
 	<br>
 	<table>
 		<tbody>
 			<tr>
-				<td><img src="proj1.png" width="100%"></td>
-				<td><img src="proj1_zbuffer.png" width="100%"></td>
+				<td><img src="proj2.png" width="100%"></td>
+				<td><img src="proj2_zbuffer.png" width="100%"></td>
 			</tr>
 			<tr>
 				<td style="text-align: center">Rendered Image</td>
 				<td style="text-align: center">Normalized Z-Buffer</td>
 			</tr>
+		</tbody>
+	</table>
+	<hr>
+	I also implemented Phong shading.
+	<br>
+	<table>
+		<tbody>
+		<tr>
+			<td><img src="proj2.png" width="100%"></td>
+			<td><img src="proj2_phong.png" width="100%"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center">Blinn Shading</td>
+			<td style="text-align: center">Phong Shading</td>
+		</tr>
 		</tbody>
 	</table>
 	<hr>
@@ -40,13 +55,5 @@
 		</tbody>
 	</table>
 	<hr>
-	<h3>Project Stumbling Blocks</h3>
-		For awhile, I got stuck because my spheres seemed slightly skewed and the camera
-		seemed farther away than it should have been.
-		<img src="proj1_fail.png" width="50%">
-		<p>
-		The problem was that I did not divide the camera's field of view by two before calculating the
-            width and height of the image plane.
-		</p>
 </body>
 </html>
