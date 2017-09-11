@@ -1,18 +1,18 @@
 <html>
 <head>
-	<title>CS6620 Project 2</title>
+	<title>CS6620 Project 3</title>
 </head>
 <body>
 	<h1>CS6620 - Ray Tracing for Graphics</h1>
-	<h2>Project 2 - Shading</h2>
+	<h2>Project 3 - Shadows</h2>
 	<h3> Results </h3>
-	Rendered in 0:00:06 with seven threads plus the main thread.
+	Rendered in 0:00:01 with seven threads plus the main thread.
 	<br>
 	<table>
 		<tbody>
 			<tr>
-				<td><img src="proj2.png" width="100%"></td>
-				<td><img src="proj2_zbuffer.png" width="100%"></td>
+				<td><img src="proj3.png" width="100%"></td>
+				<td><img src="proj3_zbuffer.png" width="100%"></td>
 			</tr>
 			<tr>
 				<td style="text-align: center">Rendered Image</td>
@@ -21,17 +21,17 @@
 		</tbody>
 	</table>
 	<hr>
-	I also implemented Phong shading.
+	Simpler scene rendered in 0:00:01 with seven threads plus the main thread.
 	<br>
 	<table>
 		<tbody>
 		<tr>
-			<td><img src="proj2.png" width="100%"></td>
-			<td><img src="proj2_phong.png" width="100%"></td>
+			<td><img src="proj3_simple.png" width="100%"></td>
+			<td><img src="proj3Z_simple.png" width="100%"></td>
 		</tr>
 		<tr>
-			<td style="text-align: center">Blinn Shading</td>
-			<td style="text-align: center">Phong Shading</td>
+			<td style="text-align: center">Rendered Image</td>
+			<td style="text-align: center">Normalized Z-Buffer</td>
 		</tr>
 		</tbody>
 	</table>
@@ -55,5 +55,11 @@
 		</tbody>
 	</table>
 	<hr>
+	<h3>Project Stumbling Blocks</h3>
+	<img src="proj3_error.png" width="50%">
+	<p>
+		I got the following image while before I tested for values greater
+		than the bias and returning too early in the for loop over node children.
+	</p>
 </body>
 </html>
