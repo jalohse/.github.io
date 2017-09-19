@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>CS6620 Project 4 </title>
+</head>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 4 - Reflections and Refractions</h2>
+	<h3> Results </h3>
+	Rendered in 0:00:01 with seven threads plus the main thread with 16 bounces.
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<td><img src="prj4.png" width="100%"></td>
+				<td><img src="proj4_zbuffer.png" width="100%"></td>
+			</tr>
+			<tr>
+				<td style="text-align: center">Rendered Image</td>
+				<td style="text-align: center">Normalized Z-Buffer</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped MacBook Pro
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB 1600 MHz DDR3</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">Graphics Card</td>
+				<td style="border: 1px solid black">Intel Iris Pro 1536 MB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Project Stumbling Blocks</h3>
+	<img src="pj4_error.jpg" width="50%">
+	<p>
+		I got the following image because I forgot to multiply the normal by negative one if
+		the back face was hit.
+	</p>
+</body>
+</html>
