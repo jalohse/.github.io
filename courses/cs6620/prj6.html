@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>CS6620 Project 6 </title>
+</head>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 6 - Bounding Volume Hierarchy.</h2>
+	<h3> Results </h3>
+	Before I implemented the BVH, my render was taking 3:41. After adding the BVH, I was able to remove
+	 two minutes of render time, for a rendering time of 1:48.
+
+	I still feel like this is much too long. I will be working on figuring out where this slow down is
+	occurring and hopefully solve the problem.
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<td><img src="prj5.jpg" width="100%" ></td>
+				<td><img src="proj5_zbuffer.png" width="100%"></td>
+			</tr>
+			<tr>
+				<td style="text-align: center">Rendered Image</td>
+				<td style="text-align: center">Normalized Z-Buffer</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped MacBook Pro
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB 1600 MHz DDR3</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">Graphics Card</td>
+				<td style="border: 1px solid black">Intel Iris Pro 1536 MB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+</body>
+</html>
