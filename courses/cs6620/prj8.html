@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>CS6620 Project 8 </title>
+</head>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 8 - Antialiasing.</h2>
+	<h3> Results </h3>
+	I first started by implementing 4 samples per pixel. This took 13:21 to render.
+	<br>
+	<img src="prj8_4_samples.png" width="800px" >
+	<br>
+	<br>
+	<br>
+	This is compared to the following image, with 16 samples per pixel taking 53:48 to render.
+	<br>
+	<img src="prj8_16_samples.png" width="800px" >
+	<br>
+	<br>
+	<br>
+	I then implemented adaptive antialiasing, with four samples being the lowest number of samples
+	per pixel, followed by 16 samples, and at the most 64 samples. This image took 16:48 to render.
+	<br>
+	<img src="prj8_adapted.png" width="800px" >
+	<br>
+	<br>
+	<br>
+	I noticed that this image did not look particularly good. Without changing my thresholds, I
+	rendered the below image with 16, 32, and 64 samples. It took 61:58.
+	<br>
+	<img src="prj8.png" width="800px" >
+	<br>
+	<br>
+	<img src="prj8_samples_more.png" width="800px" >
+	<br>
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped MacBook Pro
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB 1600 MHz DDR3</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">Graphics Card</td>
+				<td style="border: 1px solid black">Intel Iris Pro 1536 MB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Project Stumbling Blocks</h3>
+	As I added more samples per pixel, I started to notice that there were a bunch of black pixels
+	being generated around my left sphere.
+	<img src="prj8_16_samples_nan.png" width="50%">
+	<p>
+		After debugging, I noticed that I never checked to see if my sine was greater than 1 in
+		refraction computations. Setting that value to 1 if it was greater than 1 solved the problem.
+	</p>
+</body>
+</html>
