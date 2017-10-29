@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>CS6620 Project 9 </title>
+</head>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 9 - Depth of Field.</h2>
+	<h3> Results </h3>
+	I first started by implementing depth of field with adaptive sampling, 16-64 samples per
+	pixel.
+	<br>
+	<img src="prj9_adapted_16_64.png" width="800px" >
+	<br>
+	<br>
+	<br>
+	Seeing how noisy it was, I increased it to 64-96 samples per pixel taking 54:53 to render.
+	<br>
+	<img src="prj9_64_96_5453.png" width="800px" >
+	<br>
+	<br>
+	<img src="prj9_samples.png" width="800px" >
+	<br>
+	<br>
+	<br>
+	It was still sort of noisy, so I decided to remove the adaptive sampling and just use 64
+	samples per pixel. It took 52:20 to render.
+	<br>
+	<img src="prj9.png" width="800px" >
+
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped MacBook Pro
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB 1600 MHz DDR3</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">Graphics Card</td>
+				<td style="border: 1px solid black">Intel Iris Pro 1536 MB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+</body>
+</html>
