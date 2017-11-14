@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>CS6620 Project 10 </title>
+</head>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 11 - Monte Carlo Sampling.</h2>
+	<h3> Results </h3>
+	Rendered in 5:54:10 with eight threads,four bounces, and 500 global illumination rays.
+	<br>
+	<img src="prj11.png" width="800px" >
+	<br>
+	<br>
+	This is what the image looked like when cosine weighting was added with 50 global illumination rays.
+	<img src="prj11_weight_cos.png" width="800px" >
+	<br>
+	<br>
+	This is what the image looked like before cosine weighting was added with 50 global illumination rays.
+	<img src="prj11_no_weight.png" width="800px" >
+
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped MacBook Pro
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB 1600 MHz DDR3</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">Graphics Card</td>
+				<td style="border: 1px solid black">Intel Iris Pro 1536 MB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	<h3>Project Stumbling Blocks</h3>
+	I had not implemented hemispherical sampling correctly, and when I rendered my image this is what I got.
+	<img src="prj11_wrong.png" width="800px">
+
+</body>
+</html>
