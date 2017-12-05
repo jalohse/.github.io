@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>CS6620 Project 13 </title>
+</head>
+<body>
+	<h1>CS6620 - Ray Tracing for Graphics</h1>
+	<h2>Project 13 - Photon Mapping.</h2>
+	<h3> Results </h3>
+	Rendered in 2:33:13 with eight threads, four bounces, 100,000 photons, and 64, 128, or 196 samples.
+	<br>
+	<img src="prj13.png" width="800px" >
+	<br>
+	<br>
+	<img src="prj13_samples.png" width="800px" >
+	<br>
+	<h3>Project Stumbling Blocks</h3>
+	<br>
+	My image does not seem to have any global illumination. When I look at my photon map, it doesn't look like there are
+	any blue photons other than on the wall and there are very few red photons.
+	<br>
+	<img src="photon_map_vis.PNG" width="800px" >
+	<br>
+	I also have weird circles aroung my light and on my teapot. I was able to decrease their visibility with more samples,
+	but with fewer samples it looks like this:
+	<img src="prj13_0.5.png" width="800px" >
+	<br> I also had trouble with my stack size, but after increasing it to 3 MB I didn't have that problem anymore.
+
+	<h3>Machine Specs</h3>
+	Running Windows 10 on a Bootcamped MacBook Pro
+	<table style="border-collapse: collapse">
+		<tbody>
+			<tr>
+				<td style="border: 1px solid black">Processor</td>
+				<td style="border: 1px solid black">Intel Core i7 2.50 GHz</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">RAM</td>
+				<td style="border: 1px solid black">16GB 1600 MHz DDR3</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid black">Graphics Card</td>
+				<td style="border: 1px solid black">Intel Iris Pro 1536 MB</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+
+
+</body>
+</html>
