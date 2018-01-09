@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 104857600,
+"dataUrl": "Mali_Rising_Web.data.unityweb",
+"asmCodeUrl": "Mali_Rising_Web.asm.code.unityweb",
+"asmMemoryUrl": "Mali_Rising_Web.asm.memory.unityweb",
+"asmFrameworkUrl": "Mali_Rising_Web.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
