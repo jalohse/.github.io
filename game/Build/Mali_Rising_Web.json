@@ -1,9 +1,13 @@
 {
-"TOTAL_MEMORY": 268435456,
+"companyName": "DefaultCompany",
+"productName": "Mali-Rising",
 "dataUrl": "Mali_Rising_Web.data.unityweb",
 "asmCodeUrl": "Mali_Rising_Web.asm.code.unityweb",
 "asmMemoryUrl": "Mali_Rising_Web.asm.memory.unityweb",
 "asmFrameworkUrl": "Mali_Rising_Web.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
-"backgroundColor": "#222C36"
+"backgroundColor": "#231F20"
 }
