@@ -1,0 +1,15 @@
+{
+	"endConditions": [{
+		"key": "MoreThan3",
+    "value": 3,
+		"description": "Unfortunately, you did not complete enough tasks to attend the celebration. While everyone is having fun, you have to find a way to finish these tasks in the dark:"
+	}, {
+		"key": "MoreThan1",
+    "value": 1,
+		"description": "You completed most of your tasks and you are able to stay for half of the celebration. You have to leave your friends though to finish your last tasks in the dark:"
+	}, {
+		"key": "All",
+    "value": 0,
+		"description": "You completed all of your tasks and you spend the entire night celebrating with your friends! At the end of the celebration, you head home to rest before another big day."
+	}]
+}
