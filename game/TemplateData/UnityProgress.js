@@ -31,7 +31,7 @@ function UnityProgress(gameInstance, progress) {
     gameInstance.progress.full.className = "full";
     gameInstance.progress.appendChild(gameInstance.progress.full);
     gameInstance.container.appendChild(gameInstance.progress);
-    timer = window.setInterval(updateText, 4000);
+    timer = window.setInterval(updateText, 8000);
   }
   gameInstance.didYouKnow.dyktext.innerHTML = items[counter];
   gameInstance.progress.full.style.width = (100 * progress) + "%";
@@ -45,7 +45,7 @@ function UnityProgress(gameInstance, progress) {
 function updateText() {
   console.log('update' + counter);
   counter++;
-  if(counter > items.size) {
+  if(counter > items.length) {
     counter = 0;
   }
   gameInstance.didYouKnow.dyktext.innerHTML = items[counter];
