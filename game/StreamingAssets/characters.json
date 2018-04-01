@@ -1,0 +1,15 @@
+{
+  "characters": [{
+    "name": "Adama",
+    "description": "You are 16 and a serious ninth grade student. This is year you have to take the national graduation exam. If you don’t pass your parents have said you’ll have to go to work to help the family. If you do pass, you hope to go on to high school because you’d like to be an engineer.  You think building roads, bridges, and more for Mali’s future would be a great way to help your country grow!"
+  }, {
+    "name": "Lassine",
+    "description": "You are a smiley 15-year-old eighth grade boy. You love soccer more than anything else in the world. Every day, you wake early to do your chores before heading to school. When you grow up you dream of being a policeman, because that will help the country and give you the income to help your family. Your dream is to earn enough to build a concrete house for your parents to replace their current mud house."
+  }, {
+    "name": "Awa",
+    "description": "You are a 14-year-old seventh grader and a bit of a prankster. Everyone knows to watch out for your jokes and tricks! Despite your love of fun, you take school seriously. Your older brother graduated top of the class two years ago, and you are determined to do the same. Sometimes it is hard to find time to study with all your chores, but you fit it in whenever you can. You’d like to be a math teacher, so you know you’ll have to study hard."
+  }, {
+    "name": "Mariam",
+    "description": "At 16, you are in the ninth grade and number one in your class. Some of your friends are already married and leaving school, which worries you. You want to be a doctor, so you need to stay in school. So far, your parents are letting you stay as long as you remain top of the class. This means you are serious about your studying – finding time to study even as you take care of four younger siblings and do chores at home."
+  }]
+}
