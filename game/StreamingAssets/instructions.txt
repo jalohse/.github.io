@@ -2,10 +2,10 @@ Through this game, you can explore life as a Mali Rising Foundation middle schoo
 
 Just like students all around Mali, your goal is to complete all your chores while still finding time for school and studying.
 
-Use the map to explore the village and complete your tasks. The tasks in each map quadrant will be highlighted when you select the quadrant. If you complete all your tasks, you can attend the village celebration for dancing and fun with your friends!
+Use the map to explore the village and complete your tasks. The tasks in each map quadrant will be highlighted when the task is in the same quadrant as you. If you complete all your tasks, you can attend the village celebration for dancing and fun with your friends!
 
-Watch the timer in the upper right hand corner – you have from sunup to sundown (6:30 am to 6:30 pm) to finish your list. You are very lucky – your walk to school is only XX minutes long because Mali Rising built a school right in Beneko. On average, students in Mali face an hour or more walk one-way to school, which makes their days even busier.
+Watch the timer in the upper right hand corner – you have from sunup to sundown (6:30 am to 6:30 pm) to finish your list. You are very lucky – your walk to school is only 24 minutes long because Mali Rising built a school right in Beneko. On average, students in Mali face an hour or more walk one-way to school, which makes their days even busier.
 
-Navigate using the arrow keys on your keyboard. To select or grab an item, click with your mouse. Scattered throughout the village you’ll find items you can click on to learn more about life in Mali.
+Navigate using the arrow keys on your keyboard. Some items can be collected. To collect them, walk up to them and the item will be added to your inventory. Scattered throughout the village you’ll find items you can walk up to to learn more about life in Mali.
 
 Good luck!
