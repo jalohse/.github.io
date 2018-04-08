@@ -6,7 +6,7 @@ var items = [
   "But by nearly every measure, Mali is one of the poorest countries in the world. And Mali is ranked as the third worst country in the world to be a child.",
   "Although 69 percent of children are enrolled in primary school in Mali, only 34 percent are enrolled in secondary school. ",
   "Education is the key to improving life in Mali. For example, with each additional year of secondary schooling a student’s future income increases by 10-20 percent. ",
-  "Through Rise: Changing Your Life Through Education, esxplore some of the challenges that face Mali’s children as they fight for their education…"
+  "Through Rise: Changing Your Life Through Education, explore some of the challenges that face Mali’s children as they fight for their education…"
 ];
 
 function UnityProgress(gameInstance, progress) {
