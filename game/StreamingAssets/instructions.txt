@@ -6,6 +6,6 @@ Use the map to explore the village and complete your tasks. The tasks in each ma
 
 Watch the timer in the upper right hand corner – you have from sunup to sundown (6:30 am to 6:30 pm) to finish your list. You are very lucky – your walk to school is only 24 minutes long because Mali Rising built a school right in Beneko. On average, students in Mali face an hour or more walk one-way to school, which makes their days even busier.
 
-Navigate using the arrow keys on your keyboard. Some items can be collected. To collect them, walk up to them and the item will be added to your inventory. Scattered throughout the village you’ll find items you can walk up to to learn more about life in Mali.
+Navigate using the arrow or W-A-S-D keys on your keyboard and look around using the mouse. Some items can be collected. To collect them, walk up to them and the item will be added to your inventory. Scattered throughout the village you’ll find items you can walk up to to learn more about life in Mali.
 
 Good luck!
