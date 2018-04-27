@@ -1,0 +1,105 @@
+class PixelIterator
+{
+public:
+	PixelIterator() { Init(); };
+	void Init() { ix = 0; };
+	bool GetPixel(int &x, int &y)
+	{
+		int i = ix++;
+		if (i  > renderImage.GetWidth() * renderImage.GetHeight())
+		{
+			return false;
+		}
+		y = i / renderImage.GetWidth();
+		x = i - y * renderImage.GetWidth();
+		return true;
+	};
+
+private:
+	std::atomic<int> ix;
+};
+
+
+Color renderParticularRay(int x, int y, int i)
+{
+	Ray cameraRay = calculateRay(x, y, i);
+	cameraRay.Normalize();
+	HitInfo hitInfo;
+	hitInfo.Init();
+	bool hit = traceRay(cameraRay, hitInfo);
+	Color shadedColor;
+	if (hit)
+	{
+		shadedColor = hitInfo.node->GetMaterial()->Shade(cameraRay, hitInfo, lights, maxBounces);
+	}
+	else
+	{
+		float u = float(x) / float(renderImage.GetWidth());
+		float v = float(y) / float(renderImage.GetHeight());
+		shadedColor = background.Sample(Point3(u, v, 0));
+	}
+	int spot = y * renderImage.GetWidth() + x;
+	renderImage.GetZBuffer()[spot] = hitInfo.z;
+	return shadedColor;
+}
+
+void RenderPixels()
+{
+	int x, y;
+	while (pixel_iterator.GetPixel(x, y))
+	{
+		Color total = Color(0, 0, 0);
+		float colorTotal = 0;
+		float colorTotalSquared = 0;
+		for (int i = 0; i < minRays; i++) {
+			Color shadedColor = renderParticularRay(x, y, i);
+			total += shadedColor;
+			float adjustedColor = (shadedColor.r + shadedColor.g + shadedColor.b) / 3;
+			colorTotal += adjustedColor;
+			colorTotalSquared += pow(adjustedColor, 2);
+		}
+		int spot = y * renderImage.GetWidth() + x;
+		Color average = total / minRays;
+		int num = minRays;
+		float averageVal = (average.r + average.g + average.b) / 3;
+		float stdDev = (colorTotalSquared / minRays) + pow(averageVal, 2) - ((2 * averageVal / minRays) * colorTotal);
+		if (stdDev > 0.02)
+		{
+			for (int i = minRays; i < maxRays; i++) {
+				Color shadedColor = renderParticularRay(x, y, i);
+				total += shadedColor;
+			}
+			average = total / maxRays;
+			num = maxRays;
+		}
+		else  if (stdDev > 0.005)
+		{
+			for (int i = minRays; i < midRays; i++) {
+				Color shadedColor = renderParticularRay(x, y, i);
+				total += shadedColor;
+			}
+			average = total / midRays;
+			num = midRays;
+		}
+		renderImage.GetPixels()[spot] = Color24(average);
+		renderImage.IncrementNumRenderPixel(1);
+		renderImage.GetSampleCount()[spot] = num;
+	}
+	StopRender();
+}
+
+void BeginRender()
+{
+	topLeftCorner = findTopCorner();
+	int n = std::thread::hardware_concurrency();
+	if (n <= 0)
+	{
+		n = 1;
+	}
+	totalThreads = oneThread ? 1 : n;
+	pixel_iterator.Init();
+	for (int i = 0; i < totalThreads; i++)
+	{
+		std::thread(RenderPixels).detach();
+	}
+}
