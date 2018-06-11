@@ -79,28 +79,13 @@
 
     <div class="row">
         <div class="small-12 medium-7 columns" style="z-index: 0">
-            <p class="about-text">Hi! My name is Jessica Hair. I am a software engineer currently attending the
-                University of Utah pursuing a MS in Computing with a specialization in Graphics and Visualization.
-                I have a BA in Computer Science from Ball State University, where I graduated Summa Cum Laude. Outside
-                of school, I work with my husband for <a href="https://www.hairsquaredsoftware.com/"> Hair Squared
-                     Software</a>, a freelance consulting and development company. In my spare time, I enjoy programming
-                various applications, reading, and spending time with my friends and family.
+            <p class="about-text">Hi! My name is Jessica Hair. I am a software engineer with a MS in Computing with a
+                specialization in Graphics and Visualization from the University of Utah and a BA in Computer Science
+                from Ball State University. I work with my husband for <a href="https://www.hairsquaredsoftware.com/">Hair
+                    Squared Software</a>, a freelance consulting and development company. In my spare time, I enjoy
+                programming various applications, reading, and spending time with my friends and family.
                 Feel free to look through my site and contact me at jessica@hairsquaredsoftware.com if you have
                 questions!</p>
-
-            <p class="about-text">What am I currently working on?</p>
-
-            <div class="about-text-list">
-                <ul>
-                    <li><b>MS Learning</b> - I am currently working towards finishing my MS degree at the University of
-                        Utah. The classes that I am taking right now are Computational Geometry and Visualization for
-                        Scientific Data. I also serve as a Teaching Assistant for the senior capstone class.
-                        I have begun work on my Master's project which aims to create an interactive way for people to
-                        explore underdeveloped cities in Africa through a 3D interface for an organization called
-                        <a href="http://www.malirisingfdn.org/">Mali Rising</a>.
-                    </li>
-                </ul>
-            </div>
         </div>
 
         <div class="small-0 medium-5 large-4 columns about-image">
@@ -116,6 +101,25 @@
     <div class="row">
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-6 medium-offset-3 large-13 large-offset-0-5 columns">
+                <img src="img/mali-rising.png">
+            </div>
+            <div class="project-description small-12 columns">
+                <h4>Rise: Changing Your Life Through Education in Mali </h4>
+                <p> I worked with <a href="http://www.malirisingfdn.org/" class="purpleLink">Mali Rising</a>, a nonprofit organization
+                    based in Salt Lake City, to create a game that  would allow donors and school children to understand
+                    the daily life of a middle schooler in Africa for my Master's project. As a middle schooler, the
+                    player has to complete various chores during the  day, including pumping water from a well and
+                    taking care of livestock. I created the game, with  direction from Mali Rising, in Unity and C# with
+                    any modeling needs done in Maya. After the game was completed, the game was sent out to more than 70
+                    people for user feedback. From this feedback we were able to tweak gameplay for better usability. I
+                    am still working on this project to address other pieces of feedback we received. To see the current
+                    version of the game, click
+                    <a href="game/index.html" class="purpleLink">here!</a></p>
+                </p>
+            </div>
+        </div>
+        <div class="individual-project small-12 large-4  large-offset-0 columns">
+            <div class="project-image small-10 small-offset-1 medium-6 medium-offset-3 large-13 large-offset-0-5 columns">
                 <img src="courses/cs6620/prj14.png">
             </div>
             <div class="project-description small-12 columns">
@@ -125,7 +129,8 @@
                     used a framework built by the professor, but the implementation for the ray tracer itself was built
                     throughout the class. By the end of the semester, my C++ ray tracer could render spheres, triangles,
                     and OBJ objects, shadows, reflections, refractions, glossy materials, textures, soft shadows, and
-                    depth of field. We also implemented BVH space partitioning and antialiasing. We explored Monte Carlo,
+                    depth of field. We implemented BVH space partitioning and antialiasing. We explored Monte
+                    Carlo,
                     path tracing, and photon mapping for global illumination techniques. The image above is my final
                     render for the class, inspired by a friend's Instagram post. Most of the models are not mine, but I
                     created the scene and material properties.
@@ -148,6 +153,8 @@
                     <a href="ray_tracer.html" class="purpleLink">Find out more!</a></p>
             </div>
         </div>
+    </div>
+    <div class="row">
 
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-6 medium-offset-3 large-13 large-offset-0-5 columns">
@@ -161,15 +168,13 @@
                     The goal was to allow students to create their own stage layout for A Midsummer Night's Dream.
                     Using WebGL, we loaded in different models and materials created by an animator and then set up the
                     options to move the objects around the stage, adjust lighting, and the ability to remove or target
-                    certain objects. The simulator also includes an export option that takes pictures of different
+                    certain objects. The simulator includes an export option that takes pictures of different
                     views, a list of objects, and lighting information for grading purposes. The simulator can be found
                     <a
                             href="http://apso.bsu.edu/2015/theatre/"
                             class="purpleLink">here.</a></p>
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-6 medium-offset-4 large-12 large-offset-0-5 columns">
                 <img src="img/parallax_mapping.png" style="margin-left: -25px">
@@ -179,7 +184,8 @@
                 <p>
                     Interactive Computer Graphics was a course I took that used OpenGL and C++ to create applications
                     that rendered scenes using rasterization. Throughout the course, I implemented lights, shading,
-                    textures, render buffers, environment mapping, reflections, and shadow mapping. For my final project,
+                    textures, render buffers, environment mapping, reflections, and shadow mapping. For my final
+                    project,
                     I implemented parallax mapping. I created a scene and used online textures with generated bump and
                     normal maps. The code for my parallax mapping application can be found
                     <a href="https://github.com/jalohse/ParallaxMapping" class="purpleLink">here</a>.
@@ -194,14 +200,18 @@
                 <h4>Physics-Based Animation</h4>
                 <p>
                     As an introduction to physics and its usages in computer graphics, I took the course Physics-Based
-                    Animation. Lectures focused on simulation models for deformable solids, cloth, and liquids, along with
+                    Animation. Lectures focused on simulation models for deformable solids, cloth, and liquids, along
+                    with
                     how to implement real-time physical simulations. With a partner, we developed a tool that would load
-                    .OBJ models of skin, bones, and muscles and allow for the deformation of the objects within set limits.
+                    .OBJ models of skin, bones, and muscles and allow for the deformation of the objects within set
+                    limits.
                     I primarily focused on the OBJ models and ensuring that they were in the correct format and that the
                     simulator could parse the data easily.
                 </p>
             </div>
         </div>
+    </div>
+    <div class="row">
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-6 medium-offset-4 large-13 large-offset-0-5 columns">
                 <img src="img/volume_rendering.png" style="margin-left: -25px">
@@ -218,8 +228,6 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="individual-project small-12 large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-6 medium-offset-4 large-13 large-offset-0-5 columns">
                 <img src="img/topology.png" style="margin-left: -25px">
@@ -255,11 +263,13 @@
                     <a href="/dataviscourse-pr-potter-plots/documents/ProcessBook.pdf" class="purpleLink">here</a>. I am
                     planning on continuing to work on this site to encompass more parts of the series, redesign some
                     of the graphs to be more visually appealing and easier to read, and/or make the data more robust
-                    even though the course has ended. I feel like this site could be really useful and help readers of
+                    even though the course has ended. I feel like this site could be useful and help readers of
                     the series see trends that I had not noticed before.
                 </p>
             </div>
         </div>
+    </div>
+    <div class="row">
         <div class="individual-project large-4  large-offset-0 columns">
             <div class="project-image small-10 small-offset-1 medium-6 medium-offset-3 large-13 large-offset-0-5 columns">
                 <img src="img/imageprocessing.png">
@@ -268,7 +278,7 @@
                 <h4>Image Processing</h4>
 
                 <p> I took Image Processing where I primarily worked with MATLAB to explore different ways to interpret
-                    images using different mathematical techniques. The class was very focused on the mathematics, and I
+                    images using different mathematical techniques. The class was focused on the mathematics, and I
                     learned a lot about filters, convolutions, Fourier transforms, compression, feature detection, and
                     neural networks. The projects I implemented used histograms and histogram matching, segmentation,
                     connected components, motion detection, mosaicing, phase correlation, and neural networks. The image
@@ -333,7 +343,7 @@
                 <p>For my last major project at the Digital Corps at Ball State, I became Junior Project Manager for the
                     Digital Corps Scholarship Application. I was tasked with setting up meetings, following major
                     deadlines and creating intermediary deadlines, ensuring every team member was where they needed to
-                    be, and making sure the product met our requirements. On top of all of these duties, I also created
+                    be, and making sure the product met our requirements. On top of all of these duties, I created
                     a PHP backend for the system and helped put together the admin and user interfaces. This application
                     is being used by the Digital Corps to give incoming freshman both a scholarship and a job for the
                     following fall.</p>
@@ -443,73 +453,73 @@
         </div>
     </div>
 
-        <!--<div class="individual-project large-4  large-offset-0 columns">-->
-        <!--<div class="project-description small-12 columns">-->
-        <!--<h4>Creative Associates Game</h4>-->
+    <!--<div class="individual-project large-4  large-offset-0 columns">-->
+    <!--<div class="project-description small-12 columns">-->
+    <!--<h4>Creative Associates Game</h4>-->
 
-        <!--<p>The Digital Corps of Ball State was asked by Creative Associates to develop a game to teach values-->
-        <!--such as honesty and money management to children in third world countries in the spring of 2014.-->
-        <!--I provided assistance in developing a scripting tool for the game in PHP, but mostly worked on the-->
-        <!--Android based game. I helped implement sound, saving and restoring of the game, and implemented cut-->
-        <!--scenes. The game was never finished because of time constraints.</p>-->
-        <!--</div>-->
-        <!--</div>-->
+    <!--<p>The Digital Corps of Ball State was asked by Creative Associates to develop a game to teach values-->
+    <!--such as honesty and money management to children in third world countries in the spring of 2014.-->
+    <!--I provided assistance in developing a scripting tool for the game in PHP, but mostly worked on the-->
+    <!--Android based game. I helped implement sound, saving and restoring of the game, and implemented cut-->
+    <!--scenes. The game was never finished because of time constraints.</p>-->
+    <!--</div>-->
+    <!--</div>-->
 
-        <!--</div>-->
-        <!--<div class="row">-->
-        <!--<div class="individual-project large-4  large-offset-0 columns">-->
-        <!--<div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">-->
-        <!--<img src="img/myvoice.svg">-->
-        <!--</div>-->
-        <!--<div class="project-description small-12 columns">-->
-        <!--<h4>MyVoice</h4>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="individual-project large-4  large-offset-0 columns">-->
+    <!--<div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">-->
+    <!--<img src="img/myvoice.svg">-->
+    <!--</div>-->
+    <!--<div class="project-description small-12 columns">-->
+    <!--<h4>MyVoice</h4>-->
 
-        <!--<p>To give Ball State students a voice on their campus, the Digital Corps was tasked with creating-->
-        <!--MyVoice. Part of the university's Academic Excellence Grant, MyVoice gives students the ability-->
-        <!--to propose ideas for the betterment of campus and then vote on the ones they would most like to see.-->
-        <!--The university cabinet and president will review the results and make changes that support them. I-->
-        <!--helped create the voting section, which enabled a user to swipe left or right on a proposal to vote-->
-        <!--using CSS. An article can be found <a-->
-        <!--href="http://www.ballstatedaily.com/article/2015/10/center-for-student-driven-change"-->
-        <!--class="purpleLink">here</a>.-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="individual-project large-4  large-offset-0 columns">-->
-        <!--<div class="project-description small-12 columns">-->
-        <!--<h4>Indianapolis Airport Authority Website</h4>-->
+    <!--<p>To give Ball State students a voice on their campus, the Digital Corps was tasked with creating-->
+    <!--MyVoice. Part of the university's Academic Excellence Grant, MyVoice gives students the ability-->
+    <!--to propose ideas for the betterment of campus and then vote on the ones they would most like to see.-->
+    <!--The university cabinet and president will review the results and make changes that support them. I-->
+    <!--helped create the voting section, which enabled a user to swipe left or right on a proposal to vote-->
+    <!--using CSS. An article can be found <a-->
+    <!--href="http://www.ballstatedaily.com/article/2015/10/center-for-student-driven-change"-->
+    <!--class="purpleLink">here</a>.-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="individual-project large-4  large-offset-0 columns">-->
+    <!--<div class="project-description small-12 columns">-->
+    <!--<h4>Indianapolis Airport Authority Website</h4>-->
 
-        <!--<p>As part of an immersive learning opportunity through Ball State, I got to work with a small team to-->
-        <!--create interactive graphics for the airport's sustainability initiatives. We each were given a-->
-        <!--specific area to focus on and I chose the Sodalis Nature Park. I created Edge Animate infographics-->
-        <!--for my page and helped others with their infographics as well. I also helped make sure that each-->
-        <!--page had the same styling and worked as it should for a cohesive end product. The site can be found-->
-        <!--through the <a href="http://mobile-ind.squarespace.com/" class="purpleLink">-->
-        <!--Indianapolis Authority's Squarespace page</a>.-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="individual-project large-4  large-offset-0 columns">-->
-        <!--<div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">-->
-        <!--<img src="img/Logo600.jpg">-->
-        <!--</div>-->
-        <!--<div class="project-description small-12 columns">-->
-        <!--<h4>IDHS Save Our Stuff App</h4>-->
+    <!--<p>As part of an immersive learning opportunity through Ball State, I got to work with a small team to-->
+    <!--create interactive graphics for the airport's sustainability initiatives. We each were given a-->
+    <!--specific area to focus on and I chose the Sodalis Nature Park. I created Edge Animate infographics-->
+    <!--for my page and helped others with their infographics as well. I also helped make sure that each-->
+    <!--page had the same styling and worked as it should for a cohesive end product. The site can be found-->
+    <!--through the <a href="http://mobile-ind.squarespace.com/" class="purpleLink">-->
+    <!--Indianapolis Authority's Squarespace page</a>.-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="individual-project large-4  large-offset-0 columns">-->
+    <!--<div class="project-image small-10 small-offset-1 medium-4 medium-offset-4 large-10 large-offset-1 columns">-->
+    <!--<img src="img/Logo600.jpg">-->
+    <!--</div>-->
+    <!--<div class="project-description small-12 columns">-->
+    <!--<h4>IDHS Save Our Stuff App</h4>-->
 
-        <!--<p>Using C# and ASP .NET MVC 5, a team and myself completed a web application for the first hackathon-->
-        <!--hosted by the state of Indiana. The goal of the hackathon was to create a website that could be used-->
-        <!--to quickly and efficiently register those affected by a natural disaster and keep track of all of-->
-        <!--the services needed by the Department of Homeland Security. I primarily set up the backend of the-->
-        <!--project, though I helped with frontend development as well.A full description of the app can be-->
-        <!--found <a-->
-        <!--href="https://www.hackerleague.org/hackathons/texas-vs-indiana-challenge/hacks/idhs-sos-app"-->
-        <!--class="purpleLink">here</a>. I also was able to be part of an interview about the project-->
-        <!--and the Digital Corps on the <a href="https://youtu.be/hS9h1KMa4fs?t=12m53s" class="purpleLink"-->
-        <!--&gt;Indiana Public Broadcasting Network.</a>-->
-        <!--</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+    <!--<p>Using C# and ASP .NET MVC 5, a team and myself completed a web application for the first hackathon-->
+    <!--hosted by the state of Indiana. The goal of the hackathon was to create a website that could be used-->
+    <!--to quickly and efficiently register those affected by a natural disaster and keep track of all of-->
+    <!--the services needed by the Department of Homeland Security. I primarily set up the backend of the-->
+    <!--project, though I helped with frontend development as well.A full description of the app can be-->
+    <!--found <a-->
+    <!--href="https://www.hackerleague.org/hackathons/texas-vs-indiana-challenge/hacks/idhs-sos-app"-->
+    <!--class="purpleLink">here</a>. I also was able to be part of an interview about the project-->
+    <!--and the Digital Corps on the <a href="https://youtu.be/hS9h1KMa4fs?t=12m53s" class="purpleLink"-->
+    <!--&gt;Indiana Public Broadcasting Network.</a>-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 </section>
 
 <!-- <section id="contact">
